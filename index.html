@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Chung</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/b9e9868bd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav id="main-nav">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Trung</span><br> from Melbourne, <br>Australia.</h1>
+            </div>
+        </div>
+</div>
+
+<!----------- About ----------->
+
+<div id="about">
+    <div class="container reveal">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/coding.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>With extensive experience in both Information Technology and Web Development, I have a high understanding of Front End systems including the use of HTML, CSS, Javascript as well Content Management Systems (EpiServer/Optimizely, Wordpress, Drupal and Shopify to name a few). <br><br>
+                Starting off in the IT Sector has given me the ability to quickly adapt to high paced environments and resolve technical issues under pressure, as well as being able to work with cross-functional teams and communicate effectively with clients.
+   
+                <br><br>Although I'm relatively new to the Dev environment, I have a keen interest in all things technology and am always looking to upskill/learn!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>IT Support</span><br>Technical Skills & Problem Solving</li>
+                        <li><span>Web Development</span><br>HTML5/CSS Applications</li>
+                        <li><span>CRM Specialisation</span><br>EpiServer, Wordpress</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 to 2022 - Australian Institute of Mining & Metallurgy</span><br>IT Support/Web Developer</li>
+                        <li><span>2019 to 2020 - NEC Australia</span><br>Service Desk Analyst</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017 - National Academy of Information Technology</span><br>Diploma of Information Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------ Skills ------------->
+
+<div id="services">
+    <div class="container reveal">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Hands on experience with HTML, CSS, Javascript and Bootstrap as well as frameworks such as EpiServer and Wordpress.</p>
+                <!------------ <a href="#">Learn more</a> ------------>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Technical Skills</h2>
+                <p>Having experience in the IT sector has allowed me to have the tools to solve problems with efficiency within a team, as well as autonomously.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-keyboard"></i>
+                <h2>Typing Speed</h2>
+                <p>With an average type speed of 100-110 Words Per Minute with 98% accuracy, I am an absolute freight train of both speed and accuracy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------ Portfolio ------------>
+
+<div id="portfolio">
+    <div class="container reveal">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Mock University Site</h3>
+                    <p>A basic hand-coded website, showcasing my knowledge of HTML, CSS and Javascript</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Cosmetic and Beauty Website</h3>
+                    <p>eCommerce website created using Wordpress</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>KLMAI</h3>
+                    <p>Investor registry website. Update coming soon.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!------- <a href="#" class="btn">See more</a> -------->
+    </div>
+</div>
+
+<!--------------- Contact ---------------->
+
+<div id="contact">
+    <div class="container reveal">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> chung-@live.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>0434 557 013</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/trung-tran-08742b259/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Trung's CV 2023.pdf" download="Trung Tran's CV" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created by Trung</i></p>
+    </div>
+</div>
+
+<!------------ Script ------------>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxBZZLzwy_GdOWajmL_lHzh5PwRoMvLnwjOCtcHz7vQr8vw6ecN8P5LxAyi-TgORherUg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+            
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+        }
+    }
+
+let about = document.getElementById("about");
+let navbar = document.getElementById("main-nav");
+
+let navPos = navbar.getBoundingClientRect().top;
+
+window.addEventListener("scroll", e => {
+  let scrollPos = window.scrollY;
+  if (scrollPos > navPos) {
+    navbar.classList.add('sticky');
+    header.classList.add('navbarOffsetMargin');
+  } else {
+    navbar.classList.remove('sticky');
+    header.classList.remove('navbarOffsetMargin');
+  }
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>
