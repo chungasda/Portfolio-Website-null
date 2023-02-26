@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: 'Poppins';
+    src: url(webfontkit/poppins-regular-webfont.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
 html{
     scroll-behavior: smooth;
 }
